@@ -1,0 +1,16 @@
+https://www.hackerrank.com/challenges/find-angle/problem
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import math
+AB = int(input())
+BC = int(input())
+
+hyp = math.sqrt(AB*AB + BC*BC)
+hyp = hyp/2
+adj = BC/2.0
+
+Output = int(round(math.degrees(math.acos(adj/hyp))))
+
+Output = str(Output)
+
+print(Output+"°")
